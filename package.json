@@ -5,9 +5,13 @@
   "dependencies": {
     "connected-react-router": "^4.2.3",
     "enzyme": "^2.9.1",
+    "google-maps": "^3.2.1",
+    "leaflet": "^1.2.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-leaflet": "^1.6.5",
+    "react-leaflet-google": "^3.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "next",
     "react-router-redux": "next",

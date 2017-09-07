@@ -3,3 +3,11 @@
   justify-content: center;
   background-color: #fff;
   color: #000; }
+
+.home {
+  height: 500px;
+  width: 100%; }
+
+.map {
+  width: 100%;
+  height: 100%; }
