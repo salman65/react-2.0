@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { arrayOf, object } from 'prop-types';
 
-import SatMap from './SatMap';
+import CustomMap from './CustomMap';
 import Card from './Card';
 
 class HomeView extends Component {
   state = {
     trigger: false
+  }
+
+  toggleTrigger = () => {
+    this.setState({ trigger: !this.state.trigger})
   }
 
   render() {
@@ -15,7 +19,7 @@ class HomeView extends Component {
     return (
       <div className="home">
         {
-          officers.map((o) => <Card key={o.id} name={o.name} details={trigger} />)
+          officers.map((o) => <Card key={o.id} name={o.name} details={trigger} trigger={this.toggleTrigger} />)
         }
       </div>
     )

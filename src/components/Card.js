@@ -1,27 +1,22 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
 
-const Card = ({ name, details }) => (
-  <div className="box card">
+import CardDetails from './CardDetails';
+import CardSummary from './CardSummary';
+
+const Card = ({ name, details, trigger }) => (
+  <div className="box card" onClick={trigger}>
     {
       details === true &&
-      <div className="card-details">
-        <h2>
-          this is details for {name}
-        </h2>
-      </div>
-    }
-    {
-      details === false &&
-      <div className="card-summary">
-        {name}
-      </div>
+      <CardDetails name={name} />
     }
   </div>
 )
 
 Card.propTypes = {
-  name: string
+  name: string,
+  details: bool,
+  trigger: bool
 }
 
 export default Card;

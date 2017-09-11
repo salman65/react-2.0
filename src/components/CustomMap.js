@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Map, Marker, Polygon, LayersControl } from 'react-leaflet';
 import { GoogleLayer }  from 'react-leaflet-google';
 
-class SatMap extends Component {
+class CustomMap extends Component {
   state = {
     center: {
       lat: 28.0448222,
@@ -70,6 +70,6 @@ class SatMap extends Component {
   }
 }
 
-SatMap.propTypes = {};
+CustomMap.propTypes = {};
 
-export default SatMap;
+export default CustomMap;
