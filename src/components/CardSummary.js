@@ -1,7 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-
 const CardSummary = ({ name }) => (
   <div className="card-summary">
     {name}

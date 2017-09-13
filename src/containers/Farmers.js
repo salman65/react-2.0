@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 
-import HomeView from '../components/HomeView';
+import FarmerView from '../components/FarmerView';
 import { withJS } from '../utils/wrapper';
 
 const mapStateToProps = state => ({
-  immutables: state.get("home")
-});
+  immutables: state.get('farmers')
+})
 
 const mapDispatchToProps = dispatch => {
   return {};
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withJS(HomeView));
+export default connect(mapStateToProps, mapDispatchToProps)(withJS(FarmerView));

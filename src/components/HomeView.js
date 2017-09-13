@@ -18,9 +18,10 @@ class HomeView extends Component {
     const { officers, agronomists, farms} = this.props;
     return (
       <div className="home">
-        {
+        {/* {
           officers.map((o) => <Card key={o.id} name={o.name} details={trigger} trigger={this.toggleTrigger} />)
-        }
+        } */}
+        <CustomMap />
       </div>
     )
   }

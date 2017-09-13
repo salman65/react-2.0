@@ -38,9 +38,9 @@ class CustomMap extends Component {
 
   updatePolygon = (lat, lng, prevlat, prevlng) => {
     const { polygon } = this.state;
-    const meow = polygon.filter((arr) => arr[0] !== prevlat && arr[1] !== prevlng);
-    meow.push([lat, lng]);
-    this.setState({ polygon: meow })
+    const newPolygon = polygon.filter((arr) => arr[0] !== prevlat && arr[1] !== prevlng);
+    newPolygon.push([lat, lng]);
+    this.setState({ polygon: newPolygon })
   }
 
 

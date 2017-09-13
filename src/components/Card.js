@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, bool } from 'prop-types';
+import { string, bool, func } from 'prop-types';
 
 import CardDetails from './CardDetails';
 import CardSummary from './CardSummary';
@@ -16,7 +16,7 @@ const Card = ({ name, details, trigger }) => (
 Card.propTypes = {
   name: string,
   details: bool,
-  trigger: bool
+  trigger: func
 }
 
 export default Card;

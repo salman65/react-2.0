@@ -2,3 +2,16 @@
 @import "blocks/_home";
 @import "blocks/_map";
 @import "blocks/_card";
+@import "blocks/_sidebar";
+@import "blocks/_navbar";
+
+.meow {
+  display: flex;
+  flex-direction: row;
+}
+
+.rawr {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}

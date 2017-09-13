@@ -18,7 +18,6 @@ const initialState = fromJS({
     {id: 1, name: 'Yolo', off_id: 1, farm_id: 1},
     {id: 2, name: 'Yolo', off_id: 2, farm_id: 2},
     {id: 3, name: 'Yolo', off_id: 3, farm_id: 3}
-
   ]
 });
 
