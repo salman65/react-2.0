@@ -1,6 +1,9 @@
 import { fromJS } from 'immutable';
 
 const initialState = fromJS({
+  farmers: [
+
+  ],
   officers: [
     {id: 0, name: 'Meow'},
     {id: 1, name: 'Meow'},
@@ -23,6 +26,15 @@ const initialState = fromJS({
 
 function homeReducer(state = initialState, action) {
   switch (action.type) {
+    case 'UPDATE_PRAC_FORM':
+      return state.update('farmers', farmers => [...farmers,{
+        id: action.id,
+        name: action.name,
+        father_name: action.father_name,
+        cnic: action.cnic,
+        owned_acerage: action.owned_acerage,
+        cultivated_acerage: action.cultivated_acerage
+      }])
     default:
       return state;
   }

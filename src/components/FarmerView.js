@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import FarmerForm from './FarmerForm';
+
 class FarmerView extends Component {
   render() {
     return (
-      <h2>Rawr</h2>
+      <div>
+      <FarmerForm dispatch={this.props.dispatch}/>
+      </div>
     )
   }
 };

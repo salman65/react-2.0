@@ -6,10 +6,10 @@ import { Views } from '../routes'
 import '../styles/App.css';
 
 const App = () => (
-  <div className="meow">
-    <Sidebar />
-    <div className="rawr">
-      <Header />
+  <div className="rawr">
+    <Header />
+    <div className="meow">
+      <Sidebar />
       <main className="app">
         <Views />
       </main>
